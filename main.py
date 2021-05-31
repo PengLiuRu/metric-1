@@ -138,7 +138,7 @@ if __name__ == '__main__':
     target = opt.target
     source_img = cv2.imread(source)
     target_img = cv2.imread(target)
-    if source_img.shape == target_img.shape:
+    if source_img.shape == target_img.shape:#git 修改实例
         m = metric(source_img,target_img)
     else:
         source_img = cv2.resize(source_img, (0, 0), fx=0.5, fy=0.5, interpolation=cv2.INTER_NEAREST)
